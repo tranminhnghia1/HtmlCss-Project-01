@@ -22,9 +22,8 @@ a{
 
 .content{
     width: 1110px;
-    max-width: calc(100%-48px);
-    margin-left: auto;
-    margin-right: auto;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
 }
 
 .btn{
@@ -105,11 +104,12 @@ a{
 }
 
 .hero .title {
-    margin-top: 8px;
+    margin-top: 20px;
     font-weight: 700;
     font-size: 6.2rem;
     line-height: 1.19;
     color: #000336;
+    font-family: "Poppins" sans-serif;
 }
 
 .hero .description {
@@ -118,6 +118,7 @@ a{
     font-size: 1.8rem;
     line-height: 1.78;
     color: #5a6473;
+    width: 100%;
 }
 
 .hero .hero-act{
@@ -291,7 +292,8 @@ a{
 }
 
 .featured .list{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     margin-top: 70px;
 }
@@ -564,7 +566,8 @@ a{
 }
 
 .footer .row-top{
-    gap: 185px;
+    column-gap: 185px;
+    
 }
 .footer .heading {
     /* font-family: "Lato", sans-serif; */
